@@ -3,210 +3,332 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Feiyan Fu · Embodied AI &amp; Dexterous Manipulation</title>
-<meta name="description" content="Feiyan Fu — robotics engineer working on dexterous manipulation, motion control and vision-language-action models.">
+<title>Feiyan Fu — Embodied AI &amp; Dexterous Manipulation</title>
+<meta name="description" content="Feiyan Fu (伏飞燕) — robotics engineer working on dexterous manipulation, motion control and vision-language-action models.">
+<meta property="og:title" content="Feiyan Fu — Embodied AI &amp; Dexterous Manipulation">
+<meta property="og:description" content="Robotics engineer at LinkerBot. 16-DoF dexterous hands, VLA policies, sim-to-real.">
+<meta property="og:image" content="assets/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23873C55'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23FAF7F3' text-anchor='middle'%3EFF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#news">News</a>
-  <a href="#experience">Experience</a>
-  <a href="#publications">Publications</a>
-  <a href="#projects">Projects</a>
-  <a href="#toolkit">Toolkit</a>
-</nav>
+<div class="topbar">
+  <a class="mark" href="#top"><span class="mark-badge">FF</span><span class="mark-name">Feiyan Fu</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#papers">Papers</a>
+    <a href="#projects">Projects</a>
+    <a href="#toolkit">Toolkit</a>
+    <a class="nav-cta" href="#contact">Contact</a>
+  </nav>
+</div>
 
-<header id="about">
-  <h1>FEIYAN FU <span class="cn">伏飞燕</span></h1>
-  <p class="lede">
-    My work focuses on <strong>dexterous manipulation</strong> and
-    <strong>embodied AI</strong> — teaching a 16-DoF hand to grasp objects it has
-    never seen, and keeping those policies alive across the gap between simulation
-    and a real arm.
-  </p>
-  <p>
-    I am a robotics engineer at <a href="https://www.linkerbot.com/">LinkerBot (灵心巧手)</a>,
-    working on motion control and vision-language-action models for dexterous hands.
-    My work covers the whole loop: closed-loop joint control over CAN/RS485,
-    teleoperation and hand retargeting for VLA data collection, URDF dynamics
-    calibration against bench measurements, and on-device inference of ACT and
-    Diffusion Policy.
-  </p>
-  <p class="quiet">I care about the gap between a policy that works in simulation and one that survives a real hand.</p>
-  <p class="links">
-    <a href="mailto:monicaffy108@gmail.com">Email</a>
-    <a href="https://github.com/monicaffy108-alt">GitHub</a>
-    <a href="https://www.kaggle.com/feiyanfu">Kaggle</a>
-  </p>
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Robotics Engineer · Dexterous Manipulation</p>
+      <h1>Feiyan Fu<span class="cn">伏飞燕</span></h1>
+      <p class="tagline">
+        I build hands that can feel their way into a grasp — and the policies that
+        survive the jump from simulation to a real arm.
+      </p>
+      <p class="hero-body">
+        16-DoF dexterous hands, 30&nbsp;Hz teleoperation, ACT and Diffusion Policy on
+        device. Currently at <strong>LinkerBot (灵心巧手)</strong>, previously BMW,
+        DJI and Geely.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#projects">See the work</a>
+        <a class="btn btn-ghost" href="mailto:monicaffy108@gmail.com">Get in touch</a>
+      </div>
+      <dl class="stats">
+        <div><dt>4</dt><dd>industry internships</dd></div>
+        <div><dt>2</dt><dd>papers under review</dd></div>
+        <div><dt>7<span>/802</span></dt><dd>Kaggle, worldwide</dd></div>
+        <div><dt>16</dt><dd>DoF hand control</dd></div>
+      </dl>
+    </div>
+    <figure class="hero-figure">
+      <img src="assets/hero.jpg" alt="Close-up of a black dexterous robotic hand pinching a small object under magenta rim light" width="1600" height="1200">
+      <figcaption>Illustration · dexterous grasping</figcaption>
+    </figure>
+  </div>
 </header>
 
-<section id="news">
-  <h2>News</h2>
-  <div class="news-item">
-    <div class="date">Nov 2026</div>
-    <div>
-      <strong>Top 7 of 802 teams</strong> · IEEE Big Data Traffic Flow Bench on Kaggle
-      <span class="quiet">(private score 0.89962, within 0.0286 of first place)</span>
-    </div>
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>dexterous manipulation</span><i>◆</i><span>vision-language-action</span><i>◆</i><span>sim-to-real</span><i>◆</i><span>teleoperation</span><i>◆</i><span>URDF dynamics</span><i>◆</i><span>diffusion policy</span><i>◆</i>
+    <span>dexterous manipulation</span><i>◆</i><span>vision-language-action</span><i>◆</i><span>sim-to-real</span><i>◆</i><span>teleoperation</span><i>◆</i><span>URDF dynamics</span><i>◆</i><span>diffusion policy</span><i>◆</i>
   </div>
-  <div class="news-item">
-    <div class="date">2026</div>
-    <div>
-      Two papers under review — <strong>NAACL 2027</strong> on adaptive computation in
-      multimodal meme understanding, <strong>CVPR 2027</strong> on forgetting signals in
-      vision-language fine-tuning.
+</div>
+
+<main>
+
+  <section id="about" class="band">
+    <p class="label">01 — About</p>
+    <div class="about-grid">
+      <div>
+        <p class="lead">
+          My work sits on the seam between a policy that scores well in simulation and
+          a hand that keeps its grip on a real object.
+        </p>
+        <p>
+          At LinkerBot I own the loop end to end: closed-loop joint control of a 16-DoF
+          hand over CAN/RS485, linkage calibration, URDF dynamics checked against bench
+          measurements, a 30&nbsp;Hz teleoperation pipeline that produces VLA training
+          data, and on-device inference of ACT and Diffusion Policy.
+        </p>
+        <p>
+          Before that I spent a year inside three very different engineering cultures —
+          ADAS perception at BMW, real-time control at DJI, cockpit HMI at Geely — which
+          is where I learned that latency budgets, not model size, decide whether a demo
+          becomes a product.
+        </p>
+        <p class="quote">
+          “A grasp that works once is a demo. A grasp that works after the calibration
+          drifts is engineering.”
+        </p>
+      </div>
+      <aside class="side-card">
+        <h3>Currently</h3>
+        <ul>
+          <li><span>Role</span>Robotics Engineer</li>
+          <li><span>Team</span>Motion Control &amp; VLA</li>
+          <li><span>Hardware</span>LinkerHand L20 · Unitree G1</li>
+          <li><span>Focus</span>Grasping, teleop, sim-to-real</li>
+        </ul>
+        <a class="side-link" href="https://github.com/monicaffy108-alt">github.com/monicaffy108-alt ↗</a>
+      </aside>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="experience">
-  <h2>Experience</h2>
+  <section id="work" class="band">
+    <p class="label">02 — Experience</p>
+    <ul class="timeline">
+      <li>
+        <span class="when">2026.08 —<br>present</span>
+        <img class="logo" src="assets/logos/linkerbot.png" alt="LinkerBot logo" width="74" height="108">
+        <div class="entry">
+          <h3>LinkerBot <span class="cn-inline">灵心巧手</span></h3>
+          <p class="role">Robotics Engineer · Motion Control &amp; VLA</p>
+          <p>Closed-loop control of a 16-DoF hand over CAN/RS485; linkage calibration and
+          URDF dynamics; a 30&nbsp;Hz teleoperation pipeline feeding VLA training, plus ACT
+          and Diffusion Policy inference on device.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2026.06 —<br>2026.08</span>
+        <img class="logo" src="assets/logos/geely.png" alt="Geely logo" width="128" height="128">
+        <div class="entry">
+          <h3>Geely Automobile</h3>
+          <p class="role">Intern · Intelligent Cockpit &amp; HMI</p>
+          <p>Prototyped perception-to-feedback interactions for the intelligent cockpit and
+          benchmarked in-car pipeline latency against the HMI response budget.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2025.12 —<br>2026.05</span>
+        <img class="logo" src="assets/logos/dji.png" alt="DJI logo" width="108" height="70">
+        <div class="entry">
+          <h3>DJI</h3>
+          <p class="role">Intern · Real-Time Embedded Systems</p>
+          <p>Profiled and hardened a real-time control loop for a gimbal subsystem: located
+          jitter in the control path and removed it before long-duration bench tests.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2025.09 —<br>2025.12</span>
+        <img class="logo" src="assets/logos/bmw.png" alt="BMW logo" width="128" height="128">
+        <div class="entry">
+          <h3>BMW</h3>
+          <p class="role">Intern · ADAS &amp; Perception</p>
+          <p>Validated sensor fusion and extrinsic calibration for ADAS features, and built
+          the evaluation tooling that flagged calibration drift before road tests.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-  <div class="row">
-    <div class="when">2026.08 –<br>Present</div>
-    <div>
-      <h3>LinkerBot (灵心巧手)</h3>
-      <p class="role">Robotics Engineer · Motion Control &amp; VLA</p>
-      <p>Closed-loop control of a 16-DoF hand over CAN/RS485 (linkage calibration, URDF
-      dynamics); a 30 Hz teleoperation pipeline feeding VLA training, plus ACT and
-      Diffusion Policy inference on device.</p>
+  <section id="papers" class="band">
+    <p class="label">03 — Publications &amp; Competitions</p>
+
+    <article class="paper">
+      <div class="paper-logo"><img src="assets/logos/logo-naacl.png" alt="NAACL 2027"></div>
+      <div>
+        <h3>Route Models, Not Modalities: What Adaptive Computation Can and Cannot Save
+        in Multimodal Meme Understanding</h3>
+        <p class="meta">Under review · NAACL 2027</p>
+        <p>Text-first routing collapses once images are skipped
+        (<strong>78.1 → 68.2</strong> macro-F1). Routing <em>models</em> instead defers the
+        <strong>20%</strong> least-confident memes to SigLIP-B/16 for
+        <strong>51–53%</strong> of the FLOPs at <strong>−0.4 to +0.4</strong> F1, beating the
+        best modality router by <strong>2.5–4.7</strong> points at equal compute.</p>
+        <p class="links"><a href="https://2027.naacl.org/">Conference ↗</a></p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-logo"><img src="assets/logos/logo-cvpr.png" alt="CVPR 2027"></div>
+      <div>
+        <h3>Does Visually Grounded Reasoning Warn of Forgetting? Two Pre-registered Tests
+        in Vision-Language Fine-tuning</h3>
+        <p class="meta">Under review · CVPR 2027</p>
+        <p>Qwen2.5-VL-3B on ScienceQA, LoRA against full vision-encoder tuning, scored once
+        on sealed seeds. The visually grounded rationale likelihood moved the Brier score by
+        <strong>0.0001</strong> (95% CI <strong>−0.0006</strong> to <strong>+0.0008</strong>)
+        and <strong>0.0010</strong> — both below the pre-registered
+        <strong>0.005</strong> effect, while LoRA on three interference tasks forgets at most
+        <strong>3.5</strong> points.</p>
+        <p class="links"><a href="https://cvpr.thecvf.com/">Conference ↗</a></p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-logo"><img src="assets/logos/logo-kaggle.png" alt="Kaggle"></div>
+      <div>
+        <h3>2026 IEEE Big Data Traffic Flow Bench</h3>
+        <p class="meta">Kaggle · team vacucity · rank <strong>top 7</strong> of <strong>802</strong> teams</p>
+        <p>Reconstruct masked freeway states and forecast queueing under physics-consistency
+        constraints from partial loop-detector observations across <strong>30+</strong>
+        segments. Transformer sequence models with an ensemble of variants; I led algorithm
+        design and the training pipeline. Private score <strong>0.89962</strong>, within
+        <strong>0.0286</strong> of first place (<strong>0.92823</strong>).</p>
+        <p class="links">
+          <a href="https://www.kaggle.com/competitions/2026-ieee-big-data-traffic-flow-bench">Competition ↗</a>
+          <a href="https://www.kaggle.com/feiyanfu">My profile ↗</a>
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section id="projects" class="band">
+    <p class="label">04 — Selected Projects</p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/projects/l20-grasp.gif" alt="The L20 hand closing a grasp on a target object" loading="lazy" width="680" height="383">
+          <span class="tag">ACT · LeRobot</span>
+        </div>
+        <div class="card-body">
+          <h3><a href="https://github.com/monicaffy108-alt/L20-LeRobot-ACT-Grasp">L20-LeRobot-ACT-Grasp</a></h3>
+          <p>Vision-conditioned grasping on the LinkerHand L20 16-DoF hand, trained with ACT
+          through LeRobot and deployed on the physical hand.</p>
+          <p class="links"><a href="https://github.com/monicaffy108-alt/L20-LeRobot-ACT-Grasp">Code ↗</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <video src="assets/projects/gesture-demo.mp4" poster="assets/projects/gesture-poster.jpg" muted loop playsinline preload="none" aria-label="Gesture sequencing demo on the L20 hand"></video>
+          <span class="tag">Python · CAN</span>
+        </div>
+        <div class="card-body">
+          <h3><a href="https://github.com/monicaffy108-alt/l20-gesture-sequencer">l20-gesture-sequencer</a></h3>
+          <p>Programmable gesture layer: YAML preset library, smooth joint interpolation and
+          on-hardware calibration, so a pose can be authored once and replayed on any hand.</p>
+          <p class="links"><a href="https://github.com/monicaffy108-alt/l20-gesture-sequencer">Code ↗</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/projects/urdf-checker.png" alt="Screenshot of the URDF checker web interface" loading="lazy" width="1200" height="700">
+          <span class="tag">Vue 3 · Vite</span>
+        </div>
+        <div class="card-body">
+          <h3><a href="https://github.com/monicaffy108-alt/Urdf-checker-Webber">Urdf-checker-Webber</a></h3>
+          <p>Browser-only URDF checker for dexterous hands: six automated checks — mesh
+          references, joint limits, inertia sanity — with no backend and no data leaving the
+          page.</p>
+          <p class="links"><a href="https://github.com/monicaffy108-alt/Urdf-checker-Webber">Code ↗</a></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/projects/g1.png" alt="Unitree G1 humanoid model with dexterous hands" loading="lazy" width="900" height="900">
+          <span class="tag">MuJoCo</span>
+        </div>
+        <div class="card-body">
+          <h3><a href="https://github.com/monicaffy108-alt/unitree-g1-simulation">unitree-g1-simulation</a></h3>
+          <p>The Unitree G1 humanoid running in MuJoCo, re-tuned so the whole stack builds and
+          steps on Apple Silicon rather than an x86 workstation.</p>
+          <p class="links"><a href="https://github.com/monicaffy108-alt/unitree-g1-simulation">Code ↗</a></p>
+        </div>
+      </article>
+
+      <article class="card card-wide">
+        <div class="card-body">
+          <h3><a href="https://github.com/monicaffy108-alt/dexhand-inertia-toolkit">dexhand-inertia-toolkit</a></h3>
+          <p>Writes measured link masses back into a URDF and proportionally scales all six
+          inertia terms, so a hand model stops lying about its own dynamics. Batch
+          left/right hands, then verify the result.</p>
+          <p class="links"><a href="https://github.com/monicaffy108-alt/dexhand-inertia-toolkit">Code ↗</a></p>
+        </div>
+        <div class="card-diagram" aria-hidden="true">
+          <span>URDF</span><i>→</i><span>mass</span><i>→</i><span>inertia</span>
+        </div>
+      </article>
     </div>
-  </div>
+  </section>
 
-  <div class="row">
-    <div class="when">2026.06 –<br>2026.08</div>
-    <div>
-      <h3>Geely Automobile</h3>
-      <p class="role">Intern · Intelligent Cockpit &amp; HMI</p>
-      <p>Prototyped perception-to-feedback interactions for the intelligent cockpit, and
-      benchmarked in-car pipeline latency against the HMI response budget.</p>
+  <section id="toolkit" class="band">
+    <p class="label">05 — Toolkit</p>
+    <div class="tool-grid">
+      <div class="tool">
+        <h3>Robotics</h3>
+        <p><span>Isaac Sim</span><span>Isaac Lab</span><span>MuJoCo</span><span>ROS 2</span><span>URDF</span><span>LeRobot</span></p>
+      </div>
+      <div class="tool">
+        <h3>Learning</h3>
+        <p><span>ACT</span><span>Diffusion Policy</span><span>π0.5</span><span>Python</span></p>
+      </div>
+      <div class="tool">
+        <h3>Robotics Hardware</h3>
+        <p><span>LinkerHand L20</span><span>Intel RealSense</span><span>Unitree G1</span></p>
+      </div>
+      <div class="tool">
+        <h3>Front-end</h3>
+        <p><span>Vue 3</span><span>Vite</span><span>TypeScript</span><span>HTML / CSS</span></p>
+      </div>
+      <div class="tool">
+        <h3>Workflow</h3>
+        <p><span>Git</span><span>VS Code</span><span>WSL</span><span>Blender</span></p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="row">
-    <div class="when">2025.12 –<br>2026.05</div>
-    <div>
-      <h3>DJI</h3>
-      <p class="role">Intern · Real-Time Embedded Systems</p>
-      <p>Profiled and hardened a real-time control loop for a gimbal subsystem: tracked
-      down jitter in the control path and cut it before long-duration bench tests.</p>
+</main>
+
+<footer id="contact">
+  <div class="foot-inner">
+    <p class="label light">06 — Contact</p>
+    <h2>Let’s build something<br>that survives contact.</h2>
+    <p class="foot-note">Open to research collaborations, robot learning internships and
+    dexterous manipulation work.</p>
+    <div class="foot-links">
+      <a href="mailto:monicaffy108@gmail.com">monicaffy108@gmail.com</a>
+      <a href="https://github.com/monicaffy108-alt">GitHub ↗</a>
+      <a href="https://www.kaggle.com/feiyanfu">Kaggle ↗</a>
+      <a href="https://xhslink.cn/m/7UPHF0BFY0z">小红书 ↗</a>
     </div>
+    <p class="foot-fine">© 2026 Feiyan Fu · built by hand, no templates.</p>
   </div>
-
-  <div class="row">
-    <div class="when">2025.09 –<br>2025.12</div>
-    <div>
-      <h3>BMW</h3>
-      <p class="role">Intern · ADAS &amp; Perception</p>
-      <p>Validated sensor-fusion and extrinsic calibration for ADAS features, and built the
-      evaluation tooling that flagged calibration drift before road tests.</p>
-    </div>
-  </div>
-</section>
-
-<section id="publications">
-  <h2>Publications &amp; Competitions</h2>
-
-  <article>
-    <h3>Route Models, Not Modalities: What Adaptive Computation Can and Cannot Save in
-    Multimodal Meme Understanding</h3>
-    <p class="meta">Under review · NAACL 2027</p>
-    <p>Text-first modality routing collapses once images are skipped
-    (<strong>78.1 → 68.2</strong> macro-F1, under the <strong>73.1</strong> text-only
-    baseline). Routing models instead defers the <strong>20%</strong> least-confident memes
-    to SigLIP-B/16 for <strong>51–53%</strong> of the FLOPs at <strong>−0.4 to +0.4</strong>
-    F1, beating the best modality router by <strong>2.5–4.7</strong> points at equal compute.</p>
-    <p class="links"><a href="https://2027.naacl.org/">Conference ↗</a></p>
-  </article>
-
-  <article>
-    <h3>Does Visually Grounded Reasoning Warn of Forgetting? Two Pre-registered Tests in
-    Vision-Language Fine-tuning</h3>
-    <p class="meta">Under review · CVPR 2027</p>
-    <p>Qwen2.5-VL-3B on ScienceQA, LoRA against full vision-encoder tuning, scored once on
-    sealed seeds. Adding the visually grounded rationale likelihood moved the seed-level
-    Brier score by <strong>0.0001</strong> (95% CI <strong>−0.0006</strong> to
-    <strong>+0.0008</strong>) and <strong>0.0010</strong> (<strong>+0.0003</strong> to
-    <strong>+0.0017</strong>) — both below the pre-registered <strong>0.005</strong> effect,
-    while LoRA on three interference tasks forgets at most <strong>3.5</strong> points.</p>
-    <p class="links"><a href="https://cvpr.thecvf.com/">Conference ↗</a></p>
-  </article>
-
-  <article>
-    <h3>2026 IEEE Big Data Traffic Flow Bench</h3>
-    <p class="meta">Kaggle · team vacucity · rank <strong>top 7</strong> of <strong>802</strong> teams</p>
-    <p>Reconstruct masked freeway states and forecast queueing patterns under
-    physics-consistency constraints from partial loop-detector observations across
-    <strong>30+</strong> highway segments. Transformer-based sequence modelling with an
-    ensemble of model variants; I led the algorithm design and training pipeline. Best
-    private score <strong>0.89962</strong>, <strong>0.0286</strong> behind first place
-    (<strong>0.92823</strong>).</p>
-    <p class="links">
-      <a href="https://www.kaggle.com/competitions/2026-ieee-big-data-traffic-flow-bench">Competition ↗</a>
-      <a href="https://www.kaggle.com/feiyanfu">My profile ↗</a>
-    </p>
-  </article>
-</section>
-
-<section id="projects">
-  <h2>Selected Projects</h2>
-
-  <article class="project">
-    <h3><a href="https://github.com/monicaffy108-alt/L20-LeRobot-ACT-Grasp">L20-LeRobot-ACT-Grasp</a></h3>
-    <p>Vision-conditioned grasping on the LinkerHand L20 16-DoF hand, trained with ACT
-    through LeRobot. <span class="quiet">Python</span></p>
-  </article>
-
-  <article class="project">
-    <h3><a href="https://github.com/monicaffy108-alt/l20-gesture-sequencer">l20-gesture-sequencer</a></h3>
-    <p>Programmable gesture layer: YAML presets, smooth joint interpolation, on-hardware
-    calibration. <span class="quiet">Python</span></p>
-  </article>
-
-  <article class="project">
-    <h3><a href="https://github.com/monicaffy108-alt/dexhand-inertia-toolkit">dexhand-inertia-toolkit</a></h3>
-    <p>Writes measured masses back into a URDF and proportionally scales all six inertia
-    terms; batch left/right hands, then verify. <span class="quiet">Python</span></p>
-  </article>
-
-  <article class="project">
-    <h3><a href="https://github.com/monicaffy108-alt/Urdf-checker-Webber">Urdf-checker-Webber</a></h3>
-    <p>Browser-only URDF checker for LinkerBot dexterous hands: six automated checks, no
-    backend, no database. <span class="quiet">TypeScript</span></p>
-  </article>
-
-  <article class="project">
-    <h3><a href="https://github.com/monicaffy108-alt/unitree-g1-simulation">unitree-g1-simulation</a></h3>
-    <p>Unitree G1 running in MuJoCo, tuned to work on Apple Silicon. <span class="quiet">Python</span></p>
-  </article>
-</section>
-
-<section id="toolkit">
-  <h2>Toolkit</h2>
-  <dl>
-    <dt>Robotics</dt>
-    <dd>Isaac Sim, Isaac Lab, MuJoCo, ROS 2, URDF, LeRobot</dd>
-    <dt>Learning</dt>
-    <dd>ACT, Diffusion Policy, π0.5, Python</dd>
-    <dt>Robotics Hardware</dt>
-    <dd>LinkerHand L20, Intel RealSense, Unitree G1</dd>
-    <dt>Front-end</dt>
-    <dd>Vue 3, Vite, TypeScript, HTML / CSS</dd>
-    <dt>Workflow</dt>
-    <dd>Git, VS Code, WSL, Blender</dd>
-  </dl>
-</section>
-
-<footer>
-  <p class="links">
-    <a href="mailto:monicaffy108@gmail.com">monicaffy108@gmail.com</a>
-    <a href="https://github.com/monicaffy108-alt">GitHub</a>
-    <a href="https://www.kaggle.com/feiyanfu">Kaggle</a>
-  </p>
-  <p class="quiet">Last updated November 2026.</p>
 </footer>
+
+<script>
+  document.querySelectorAll('.card video').forEach(function (v) {
+    v.addEventListener('mouseenter', function () { v.play().catch(function () {}); });
+    v.addEventListener('mouseleave', function () { v.pause(); });
+  });
+</script>
 
 </body>
 </html>
