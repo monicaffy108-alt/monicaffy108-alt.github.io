@@ -292,6 +292,21 @@ h2 {
 
 .project-text.wide { max-width: 60ch; }
 
+.status {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 9px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  vertical-align: middle;
+}
+
 /* ---------- toolkit ---------- */
 .kit {
   display: grid;
